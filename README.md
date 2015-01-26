@@ -1,7 +1,7 @@
 Apache-Custom 
 =============
 
-Apache custom installation on web server
+Apache custom on web server
 
 Versions
 --------
