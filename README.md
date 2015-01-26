@@ -18,6 +18,7 @@ yum install gcc openssl-devel apr-devel apr-util-devel
 Configure
 ---------
 
+:
 ~# tar xvzf http-custom.tar.gz
 
 ~# cd http-custom/
