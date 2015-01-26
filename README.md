@@ -19,7 +19,10 @@ Configure
 ---------
 
 ~# tar xvzf http-custom.tar.gz
+
 ~# cd http-custom/
+
 ~# ./configure --prefix=/usr/local/apache_custom/ --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
+
 ~# /usr/local/apache_custom/bin/apachectl -k start
 
