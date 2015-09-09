@@ -6,7 +6,7 @@ Apache custom on web server
 Versions
 --------
 
-Apache-Custom v1.0 by: 2015, fajarhide
+Apache-Custom v1.1 by: 2015, fajarhide
 
 Depedency
 ---------
