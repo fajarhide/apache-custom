@@ -8,23 +8,24 @@ Versions
 
 Apache-Custom v1.1 by: 2015, fajarhide
 
-Depedency
----------
+
+Depedency Install
+-----------------
 
 ~# yum install mysql-server php-mysql -y
 
 ~# yum install gcc openssl-devel apr-devel apr-util-devel
 
-Configure
----------
 
-~# tar xvzf http-custom.tar.gz
+Github Installation
+-------------------
 
-~# cd http-custom/
+  ~# wget -q -O install.sh https://raw.githubusercontent.com/fajarhide/apache-custom/master/install.sh
+  
+  ~# sh install.sh
 
-~# ./configure --prefix=/usr/local/apache_custom/ --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
 
-~# make & make install
+Information
+-----------
 
-~# /usr/local/apache_custom/bin/apachectl -k start
-
+Your success create apache port 80 (default)
