@@ -25,28 +25,16 @@ sleep 5;
 make && make install
 sleep 5;
 echo ''
-echo ''
 echo -n '... Finish Installing Apache!'
-echo ''
 sleep 2;
 echo -n '... Configure Apache-Custom Running ...'
 sleep 2;
-echo ''
-echo ''
-wget -q -O /usr/local/apache2-custom/modules/libphp5.so https://raw.githubusercontent.com/fajarhide/apache-custom/master/php/libphp5.so
-echo ''
 rm -Rf /usr/local/apache2-custom/conf/httpd.conf
 rm -Rf /usr/local/apache2-custom/conf/extra/http-mpm.conf
-echo ''
+cp /tmp/apache-custom/httpd-custom/file/libphp5.so /usr/local/apache2-custom/modules/
 wget -q -O /usr/local/apache2-custom/conf/httpd.conf https://raw.githubusercontent.com/fajarhide/apache-custom/master/conf/httpd.conf
 wget -q -O /usr/local/apache2-custom/conf/extra/http-mpm.conf https://raw.githubusercontent.com/fajarhide/apache-custom/master/conf/extra/http-mpm.conf
-sleep 2;
-echo ''
-echo ''
 echo '... Configuration Apache-Custom finished!'
-sleep 2;
-echo ''
-echo ''
 sleep 2;
 echo '... Starting Apache-Custom ...'
 sleep 2;
@@ -59,7 +47,7 @@ echo ''
 echo ''
 echo ''
 echo '... Great Jobs..! Your Apache-Custom for PHP5 have a running use port on Default (80) !'
-echo '... Access http://localhost/ or http://yourdomain/'
+echo '... Access http://localhost/ or http://yourdomain'
 echo ''
 echo '... Usage Apache-Custom : '
 echo '... ----------------------- '
