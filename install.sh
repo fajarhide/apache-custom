@@ -15,13 +15,13 @@ wget https://raw.githubusercontent.com/fajarhide/apache-custom/master/httpd-cust
 echo -n '.'
 /bin/tar xvzf /tmp/apache-custom/httpd-custom.tar.gz
 echo -n '.'
-sleep 2;
+sleep 5;
 echo ''
 echo -n '... Running Installing Apache...'
 sleep 2;
 echo ''
-/bin/bash /tmp/apache-custom/httpd-custom/configure --prefix=/usr/local/apache2-custom/ --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
-sleep 5;
+/bin/bash /tmp/apache-custom/configure --prefix=/usr/local/apache2-custom/ --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
+sleep 2;
 make && make install
 sleep 5;
 echo ''
@@ -31,7 +31,10 @@ echo -n '... Configure Apache-Custom Running ...'
 sleep 2;
 rm -Rf /usr/local/apache2-custom/conf/httpd.conf
 rm -Rf /usr/local/apache2-custom/conf/extra/http-mpm.conf
-cp /tmp/apache-custom/httpd-custom/file/libphp5.so /usr/local/apache2-custom/modules/
+cp /tmp/apache-custom/file/libphp5.so /usr/local/apache2-custom/modules/
+rm -Rf /usr/sbin/rotatelogs
+wget -q -O /usr/sbin/rotatelogs https://raw.githubusercontent.com/fajarhide/apache-custom/master/file/rotatelogs
+chmod +x /usr/sbin/rotatelogs
 wget -q -O /usr/local/apache2-custom/conf/httpd.conf https://raw.githubusercontent.com/fajarhide/apache-custom/master/conf/httpd.conf
 wget -q -O /usr/local/apache2-custom/conf/extra/http-mpm.conf https://raw.githubusercontent.com/fajarhide/apache-custom/master/conf/extra/http-mpm.conf
 echo '... Configuration Apache-Custom finished!'
