@@ -1,31 +1,37 @@
 Apache-Custom 
 =============
 
-Apache custom on web server
+Apache Custom for PHP5 running on server on web server
 
 Versions
 --------
 
-Apache-Custom v1.1 by: 2015, fajarhide
+Apache-Custom v1.2 by: 2015, fajarhide
 
 
 Depedency Install
 -----------------
 
-~# yum install mysql-server php-mysql -y
-
-~# yum install gcc openssl-devel apr-devel apr-util-devel
+- mysql-server 
+- php-mysql
+- gcc 
+- openssl-devel 
+- apr-devel 
+- apr-util-devel
 
 
 Github Installation
 -------------------
 
-  ~# wget -q -O install.sh https://raw.githubusercontent.com/fajarhide/apache-custom/master/install.sh
-  
-  ~# sh install.sh
+  ~# wget -q -O install.sh https://raw.githubusercontent.com/fajarhide/apache-custom/master/install.sh && sh install.sh
 
 
-Information
------------
+Check Log
+---------
 
-Your success create apache port 80 (default)
+- Update automation installation
+- Create directory
+- Add file index.php
+- Tunning custom configuration
+- Running on default port 80
+
