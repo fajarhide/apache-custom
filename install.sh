@@ -59,3 +59,4 @@ echo '... Stop -> # /usr/local/apache2-custom/bin/apachectl -k stop '
 echo '... Graceful -> # /usr/local/apache2-custom/bin/apachectl -k graceful '
 echo '... Graceful -> # /usr/local/apache2-custom/bin/apachectl -k restart '
 echo ''
+rm -Rf install.sh
