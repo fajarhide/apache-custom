@@ -6,12 +6,13 @@ Apache Custom for PHP5 running on server on web server
 Versions
 --------
 
-Apache-Custom v1.2
+Apache-Custom v.1.2
 
 
 ChangeLog
 ---------
 
+- Apache HTTP Server (httpd) version 2.2.31
 - Update automation installation
 - Create directory
 - Add file index.php
