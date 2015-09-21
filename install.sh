@@ -17,7 +17,7 @@ echo -n '.'
 echo -n '.'
 sleep 5;
 echo ''
-echo -n '... Running Installing Apache...'
+echo -n '... Running Installing Apache'
 sleep 2;
 echo ''
 /bin/bash /tmp/apache-custom/configure --prefix=/usr/local/apache2-custom/ --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
@@ -27,7 +27,7 @@ sleep 5;
 echo ''
 echo -n '... Finish Installing Apache!'
 sleep 2;
-echo -n '... Configure Apache-Custom Running ...'
+echo -n '... Configure Apache-Custom Running'
 sleep 2;
 rm -Rf /usr/local/apache2-custom/conf/httpd.conf
 rm -Rf /usr/local/apache2-custom/conf/extra/http-mpm.conf
@@ -39,7 +39,7 @@ wget -q -O /usr/local/apache2-custom/conf/httpd.conf https://raw.githubuserconte
 wget -q -O /usr/local/apache2-custom/conf/extra/http-mpm.conf https://raw.githubusercontent.com/fajarhide/apache-custom/master/conf/extra/http-mpm.conf
 echo '... Configuration Apache-Custom finished!'
 sleep 2;
-echo '... Starting Apache-Custom ...'
+echo -n '... Starting Apache-Custom..'
 sleep 2;
 echo ''
 mkdir -p /var/www/html
@@ -47,16 +47,18 @@ wget -q -O /var/www/html/index.php https://raw.githubusercontent.com/fajarhide/a
 chmod +x /var/www/html/index.php
 echo ''
 /usr/local/apache2-custom/bin/apachectl -k start
+sleep 5;
+clear
 echo ''
+echo '... Great Jobs..!'
+echi '... Your Apache-Custom for PHP5 have a running use port on Default (80) !'
+echo '... You can access on http://localhost/ or http://yourdomain'
 echo ''
-echo '... Great Jobs..! Your Apache-Custom for PHP5 have a running use port on Default (80) !'
-echo '... Access http://localhost/ or http://yourdomain'
-echo ''
-echo '... Usage Apache-Custom : '
-echo '... ----------------------- '
-echo '... Start -> # /usr/local/apache2-custom/bin/apachectl -k start '
-echo '... Stop -> # /usr/local/apache2-custom/bin/apachectl -k stop '
-echo '... Graceful -> # /usr/local/apache2-custom/bin/apachectl -k graceful '
-echo '... Graceful -> # /usr/local/apache2-custom/bin/apachectl -k restart '
+echo '... Usage Apache-Custom (command) : '
+echo '... ------------------------------- '
+echo '... Start: /usr/local/apache2-custom/bin/apachectl -k start '
+echo '... Stop: /usr/local/apache2-custom/bin/apachectl -k stop '
+echo '... Graceful: /usr/local/apache2-custom/bin/apachectl -k graceful '
+echo '... Graceful: /usr/local/apache2-custom/bin/apachectl -k restart '
 echo ''
 rm -Rf install.sh
