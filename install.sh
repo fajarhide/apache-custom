@@ -41,11 +41,9 @@ echo '... Configuration Apache-Custom finished!'
 sleep 2;
 echo -n '... Starting Apache-Custom..'
 sleep 2;
-echo ''
 mkdir -p /var/www/html
 wget -q -O /var/www/html/index.php https://raw.githubusercontent.com/fajarhide/apache-custom/master/file/index.php
 chmod +x /var/www/html/index.php
-echo ''
 /usr/local/apache2-custom/bin/apachectl -k start
 sleep 5;
 clear
