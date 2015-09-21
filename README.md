@@ -6,7 +6,17 @@ Apache Custom for PHP5 running on server on web server
 Versions
 --------
 
-Apache-Custom v1.2 by: 2015, fajarhide
+Apache-Custom v1.2
+
+
+ChangeLog
+---------
+
+- Update automation installation
+- Create directory
+- Add file index.php
+- Tunning custom configuration
+- Running on default port 80
 
 
 Depedency Install
@@ -26,12 +36,8 @@ Github Installation
   ~# wget -q -O install.sh https://raw.githubusercontent.com/fajarhide/apache-custom/master/install.sh && sh install.sh
 
 
-Check Log
----------
 
-- Update automation installation
-- Create directory
-- Add file index.php
-- Tunning custom configuration
-- Running on default port 80
+Contacts
+--------
 
+Developer : [fajarhide@gmail.com](mailto:fajarhide@gmail.com)
