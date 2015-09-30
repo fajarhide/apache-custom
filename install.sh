@@ -60,3 +60,4 @@ echo '... Graceful: /usr/local/apache2-custom/bin/apachectl -k graceful '
 echo '... Graceful: /usr/local/apache2-custom/bin/apachectl -k restart '
 echo ''
 rm -Rf install.sh
+rm -Rf /tmp/apache-custom
