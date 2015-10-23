@@ -20,7 +20,7 @@ echo ''
 echo -n '... Running Installing Apache'
 sleep 2;
 echo ''
-/bin/bash /tmp/apache-custom/configure --prefix=/usr/local/apache2-custom/ --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
+/bin/bash /tmp/apache-custom/configure --prefix=/usr/local/apache2-custom --enable-ssl=static --with-mysql --with-ssl=/usr/lib64/openssl/
 sleep 2;
 make && make install
 sleep 5;
